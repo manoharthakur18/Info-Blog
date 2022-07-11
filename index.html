@@ -54,8 +54,8 @@
                 <li><a class="dropdown-item" href="#">Web Dev</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Support</a>
-                  <a class="dropdown-item" href="#">Write for us</a>
+                  <a class="dropdown-item" href="contact.html">Support</a>
+                  <a class="dropdown-item" href="contact.html">Write for us</a>
                 </li>
               </ul>
             </li>
@@ -74,9 +74,185 @@
               Search
             </button>
           </form>
+          <div class="mx-2">
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Log in
+            </button>
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Sign up
+            </button>
+          </div>
         </div>
       </div>
     </nav>
+
+    <!--Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login to Info Blog</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Log in</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Singup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">
+              Create a Info Blog account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Enter Your Name</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Conform Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >All information correct</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Create an account
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -164,11 +340,14 @@
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary">World</strong>
-              <h3 class="mb-0">Global conferences</h3>
-              <div class="mb-1 text-muted">Nov 12</div>
+              <h3 class="mb-0">Climate Change</h3>
+              <div class="mb-1 text-muted">Nov 10</div>
               <p class="card-text mb-auto">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
+                Climate change refers to long-term shifts in temperatures and
+                weather patterns. These shifts may be natural, but since the
+                1800s, human activities have been the main driver of climate
+                change, primarily due to the burning of fossil fuels (like coal,
+                oil, and gas), which produces heat-trapping gases.
               </p>
               <a href="#" class="stretched-link">Continue reading</a>
             </div>
@@ -177,8 +356,8 @@
                 src="thumb1.jpg"
                 class="bd-placeholder-img"
                 width="200"
-                height="250"
-                alt=""
+                height="300"
+                alt="Img not available"
               />
             </div>
           </div>
@@ -188,12 +367,14 @@
             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
           >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Design</strong>
-              <h3 class="mb-0">Learn Designing</h3>
+              <strong class="d-inline-block mb-2 text-success">Tech</strong>
+              <h3 class="mb-0">Learn Python</h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="mb-auto">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
+                Python is a high-level, interpreted, general-purpose programming
+                language. Its design philosophy emphasizes code readability with
+                the use of significant indentation. Python is dynamically-typed
+                and garbage-collected.
               </p>
               <a href="#" class="stretched-link">Continue reading</a>
             </div>
@@ -202,7 +383,7 @@
                 src="thumb2.jpg"
                 class="bd-placeholder-img"
                 width="200"
-                height="250"
+                height="300"
                 alt=""
               />
             </div>
@@ -215,12 +396,14 @@
             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
           >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">World</strong>
-              <h3 class="mb-0">Global conferences</h3>
-              <div class="mb-1 text-muted">Nov 12</div>
+              <strong class="d-inline-block mb-2 text-primary">Metals</strong>
+              <h3 class="mb-0">Metals</h3>
+              <div class="mb-1 text-muted">Nov 14</div>
               <p class="card-text mb-auto">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
+                A metal is a material that, when freshly prepared, polished, or
+                fractured, shows a lustrous appearance, and conducts electricity
+                and heat relatively well. Metals are typically malleable or
+                ductile
               </p>
               <a href="#" class="stretched-link">Continue reading</a>
             </div>
@@ -240,12 +423,15 @@
             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
           >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Design</strong>
-              <h3 class="mb-0">Learn Designing</h3>
-              <div class="mb-1 text-muted">Nov 11</div>
+              <strong class="d-inline-block mb-2 text-success"
+                >Electronic</strong
+              >
+              <h3 class="mb-0">Laptop</h3>
+              <div class="mb-1 text-muted">Nov 13</div>
               <p class="mb-auto">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
+                A laptop, laptop computer, or notebook computer is a small,
+                portable personal computer with a screen and alphanumeric
+                keyboard.
               </p>
               <a href="#" class="stretched-link">Continue reading</a>
             </div>
